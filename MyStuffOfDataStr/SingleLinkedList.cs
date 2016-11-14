@@ -50,6 +50,7 @@ namespace MyStuffOfDataStr
             while (current != null)
             {
                 if (current.Data == num)
+
                     break;
                 position++;
                 current = current.Next;
