@@ -53,6 +53,7 @@ namespace MyStuffOfDataStr
                     break;
                 position++;
                 current = current.Next;
+
             }
             if (current == null)
             {
