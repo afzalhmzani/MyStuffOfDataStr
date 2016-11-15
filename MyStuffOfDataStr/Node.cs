@@ -11,6 +11,10 @@
             this.next = next;
         }
 
+        public Node(object data)
+        {
+            this.data = data;
+        }
         public object Data
         {
             get { return this.data; }

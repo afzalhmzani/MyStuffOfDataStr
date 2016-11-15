@@ -81,6 +81,57 @@ namespace MyStuffOfDataStr
             get { return this.count; }
         }
 
+        public void InsertAtTheBiginneng(object data)
+        {
+            Node temp = new Node(data);
+            temp.Next = head;
+            head = temp;
+        }
+
+        public void InsertAtTheEnd(object data)
+        {
+            Node current;
+            Node temp = new Node(data);
+
+            if (head == null)
+            {
+                head = temp;
+                return;
+            }
+            current = head;
+            while (current.Next != null)
+                current = current.Next;
+            current.Next = temp;
+
+        }
+
+        public void InsertAtPosition(object data, int pos)
+        {
+            Node temp;
+            int i;
+
+            if (pos == 1)
+            {
+                temp = new Node(data);
+                temp.Next = head;
+                head = temp;
+                return;
+            }
+            Node current = head;
+
+            for (i = 1; i < pos - 1 && current != null; i++)
+                current = current.Next;
+            if (current == null)
+                Console.WriteLine("You can insert only upto " + i + " the postion");
+            else
+            {
+                temp = new Node(data);
+                temp.Next = current.Next;
+                current.Next = temp;
+            }
+
+        }
+
         public object Add(int index, object o)
         {
             if (index < 0)
@@ -146,5 +197,21 @@ namespace MyStuffOfDataStr
             this.head = null;
             this.count = 0;
         }
+
+        public void ReverseList()
+        {
+            Node current, preCurrent, next;
+            preCurrent = null;
+            current = head;
+            while (current != null)
+            {
+                next = current.Next;
+                current.Next = preCurrent;
+                preCurrent = current;
+                current = next;
+            }
+            head = preCurrent;
+        }
+
     }
 }
