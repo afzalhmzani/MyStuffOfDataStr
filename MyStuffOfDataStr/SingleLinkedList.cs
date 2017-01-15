@@ -212,6 +212,30 @@ namespace MyStuffOfDataStr
             }
             head = preCurrent;
         }
+        // did not work because the comparisson between two objects
+        public void BubbleSortExData()
+        {
+            Node end, myCurrent, myPostCurrent;
+
+            for (end = null; end != head.Next; end = myCurrent)
+            {
+                for (myCurrent = head; myCurrent.Next != end; myCurrent = myCurrent.Next)
+                {
+                    myPostCurrent = myCurrent.Next;
+                    if (myCurrent.DataInt > myPostCurrent.DataInt)
+                    {
+                        int temp = myCurrent.DataInt;
+                        myCurrent.DataInt = myPostCurrent.DataInt;
+                        myPostCurrent.DataInt = temp;
+                    }
+                }
+            }
+        }
+
+
+
+
+
 
     }
 }
