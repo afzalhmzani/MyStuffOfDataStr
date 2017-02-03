@@ -72,9 +72,65 @@ namespace DoubleLinkedListProject
 
             for (i = 2; i <= n; i++)
             {
-                Console.Write("Enter the next element: ");
+                Console.Write("Enter the next element to be inserted: ");
                 data = Convert.ToInt32(Console.ReadLine());
                 InsertAtEnd(data);
+            }
+        }
+        public void InsertAfter(int data, int x)
+        {
+            Node temp = new Node(data);
+            Node p = start;
+            while (p != null)
+            {
+                if (p.info == x)
+                    break;
+                p = p.next;
+            }
+            if (p == null)
+                Console.WriteLine(x + " the elemint is not on the list");
+            else
+            {
+                temp.prev = p;
+                temp.next = p.next;
+                if (p.next != null)
+                    p.next.prev = temp;
+                p.next = temp;
+            }
+        }
+
+        public void InsertBefor(int data, int x)
+        {
+            if (start == null)
+            {
+                Console.WriteLine("List is empty");
+                return;
+            }
+            if (start.info == x)
+            {
+                Node temp = new Node(data);
+                temp.next = start;
+                start.prev = temp;
+                start = temp;
+                return;
+            }
+            Node p = start;
+            while (p != null)
+            {
+                if (p.info == x)
+                    break;
+                p = p.next;
+            }
+
+            if (p == null)
+                Console.WriteLine(x + " the element is not found in the list");
+            else
+            {
+                Node temp = new Node(data);
+                temp.prev = p.prev;
+                temp.next = p;
+                p.prev.next = temp;
+                temp.prev = temp;
             }
         }
     }
