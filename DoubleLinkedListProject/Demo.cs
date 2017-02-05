@@ -56,10 +56,35 @@ namespace DoubleLinkedListProject
                         x = Convert.ToInt32(Console.ReadLine());
                         dlist.InsertAfter(data, x);
                         break;
-
-
+                    case 6:
+                        Console.WriteLine("Enter the elememint to be inserted: ");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the elemint before wich to insert: ");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        dlist.InsertBefor(data, x);
+                        break;
+                    case 7:
+                        dlist.DeleteFirstNode();
+                        break;
+                    case 8:
+                        dlist.DeleteLastNode();
+                        break;
+                    case 9:
+                        Console.WriteLine("Enter an element to be deleted:");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        dlist.DeleteNode(data);
+                        break;
+                    case 10:
+                        dlist.ReversList();
+                        break;
+                    default:
+                        Console.WriteLine("Wrong choice");
+                        Console.WriteLine();
+                        break;
                 }
+                Console.WriteLine();
             }
+            Console.WriteLine("Exiting");
 
 
         }
