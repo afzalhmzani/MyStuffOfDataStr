@@ -56,11 +56,24 @@ namespace CircularLinkedListProject
                         x = Convert.ToInt32(Console.ReadLine());
                         CList.InsertAfter(data, x);
                         break;
-
-
+                    case 6:
+                        CList.DeleteFirstNode();
+                        break;
+                    case 7:
+                        CList.DeleteLastNode();
+                        break;
+                    case 8:
+                        Console.Write("Enter an element to be deleted it: ");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        CList.DeleteNode(data);
+                        break;
+                    default:
+                        Console.WriteLine("Wrong Choice");
+                        break;
                 }
-
+                Console.WriteLine();
             }
+            Console.WriteLine("Exiting");
         }
     }
 }

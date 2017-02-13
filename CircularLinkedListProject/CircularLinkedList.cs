@@ -95,5 +95,68 @@ namespace CircularLinkedListProject
 
         }
 
+        public void DeleteFirstNode()
+        {
+            if (last == null)
+                return;
+            if (last.link == last)
+            {
+                last = null;
+                return;
+            }
+            last.link = last.link.link;
+        }
+
+        public void DeleteLastNode()
+        {
+            if (last == null)
+                return;
+            if (last.link == last)
+            {
+                last = null;
+                return;
+            }
+            Node p = last.link;
+            while (p.link != last)
+            {
+                p = p.link;
+            }
+            p.link = last.link;
+            last = p;
+        }
+
+        public void DeleteNode(int x)
+        {
+            if (last == null)
+                return;
+            if (last.link == last && last.info == x)
+            {
+                last = null;
+                return;
+            }
+            if (last.link.info == x)
+            {
+                last.link = last.link.link;
+                return;
+            }
+            Node p = last.link;
+            while (p.link != last.link)
+            {
+                if (p.link.info == x)
+                    break;
+                p = p.link;
+            }
+            if (p.link == last.link)
+            {
+                Console.WriteLine(x + "the element is not found");
+            }
+            else
+            {
+                p.link = p.link.link;
+                if (last.info == x)
+                    last = p;
+            }
+        }
+
     }
 }
