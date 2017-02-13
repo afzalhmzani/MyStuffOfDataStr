@@ -233,7 +233,22 @@ namespace MyStuffOfDataStr
         }
 
 
-
+        public void Concatenate(SingleLinkedList list)
+        {
+            if (head == null)
+            {
+                head = list.head; 
+                return;
+            }
+            if(list.head == null)
+                return;
+            Node p = head;
+            while (p.Next !=null)
+            {
+                p = p.Next;
+            }
+            p.Next = list.head;
+        }
 
 
 

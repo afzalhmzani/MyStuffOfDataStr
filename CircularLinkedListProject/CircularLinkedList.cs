@@ -158,5 +158,22 @@ namespace CircularLinkedListProject
             }
         }
 
+        public void Concatenate(CircularLinkedList cList)
+        {
+            if (last == null)
+            {
+                last = cList.last;
+                return;
+            }
+            if (cList.last == null)
+            {
+                return;
+            }
+            Node p = last.link;
+            last.link = cList.last.link;
+            cList.last.link = p;
+            last = cList.last;
+        }
+
     }
 }

@@ -9,8 +9,10 @@ namespace CircularLinkedListProject
             int choice, data, x;
 
             CircularLinkedList CList = new CircularLinkedList();
+            CircularLinkedList clist2 = new CircularLinkedList();
 
             CList.CreatList();
+            clist2.CreatList();
 
             while (true)
             {
@@ -22,17 +24,21 @@ namespace CircularLinkedListProject
                 Console.WriteLine("6. Delete first node");
                 Console.WriteLine("7. Delete last node");
                 Console.WriteLine("8. Delete any node");
-                Console.WriteLine("9. Quit");
+                Console.WriteLine("9. concatnate");
+                Console.WriteLine("10. Quit");
 
                 Console.Write("Enter your choice: ");
                 choice = Convert.ToInt32(Console.ReadLine());
 
-                if (choice == 9)
+                if (choice == 10)
                     break;
                 switch (choice)
                 {
                     case 1:
+                        Console.WriteLine("one");
                         CList.DisplayList();
+                        Console.WriteLine("two");
+                        clist2.DisplayList();
                         break;
                     case 2:
                         Console.Write("Enter the elemint to be inserted: ");
@@ -66,6 +72,11 @@ namespace CircularLinkedListProject
                         Console.Write("Enter an element to be deleted it: ");
                         data = Convert.ToInt32(Console.ReadLine());
                         CList.DeleteNode(data);
+                        break;
+                    case 9:
+                        Console.Write("concatnate two Clist");
+                        CList.Concatenate(clist2);
+                        CList.DisplayList();
                         break;
                     default:
                         Console.WriteLine("Wrong Choice");
