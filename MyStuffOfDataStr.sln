@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleLinkedListProject", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularLinkedListProject", "CircularLinkedListProject\CircularLinkedListProject.csproj", "{B59AE46C-9279-41A6-B135-53CC47538A7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackProject", "StackProject\StackProject.csproj", "{C337A5EC-BB9E-4B98-996E-F5BF6B502682}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B59AE46C-9279-41A6-B135-53CC47538A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B59AE46C-9279-41A6-B135-53CC47538A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B59AE46C-9279-41A6-B135-53CC47538A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C337A5EC-BB9E-4B98-996E-F5BF6B502682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C337A5EC-BB9E-4B98-996E-F5BF6B502682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C337A5EC-BB9E-4B98-996E-F5BF6B502682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C337A5EC-BB9E-4B98-996E-F5BF6B502682}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
