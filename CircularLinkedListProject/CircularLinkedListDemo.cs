@@ -41,24 +41,24 @@ namespace CircularLinkedListProject
                         clist2.DisplayList();
                         break;
                     case 2:
-                        Console.Write("Enter the elemint to be inserted: ");
+                        Console.Write("Enter the element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
                         CList.InsertInEmptyList(data);
                         break;
                     case 3:
-                        Console.Write("Enter the elemnt to be inserted: ");
+                        Console.Write("Enter the element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
                         CList.InsertInBeginning(data);
                         break;
                     case 4:
-                        Console.Write("Enter the elemint to be inserted: ");
+                        Console.Write("Enter the element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
                         CList.InsertAtEnd(data);
                         break;
                     case 5:
-                        Console.Write("Enter the emint to be inserted: ");
+                        Console.Write("Enter the element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
-                        Console.Write("Enter the elemnt after which to be inserted: ");
+                        Console.Write("Enter the element after which to be inserted: ");
                         x = Convert.ToInt32(Console.ReadLine());
                         CList.InsertAfter(data, x);
                         break;

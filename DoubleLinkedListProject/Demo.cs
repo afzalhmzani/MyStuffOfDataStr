@@ -14,7 +14,7 @@ namespace DoubleLinkedListProject
             while (true)
             {
                 Console.WriteLine("1. Display list");
-                Console.WriteLine("2. Insert in empty list");
+                Console.WriteLine("2. Insert in an empty list");
                 Console.WriteLine("3. Insert a node at the biginning of the list");
                 Console.WriteLine("4. Insert a node at the end of the list");
                 Console.WriteLine("5. Insert a node after a specifide node");
@@ -35,31 +35,31 @@ namespace DoubleLinkedListProject
                         dlist.DisplayList();
                         break;
                     case 2:
-                        Console.WriteLine("Enter the eleimint to be inserted: ");
+                        Console.WriteLine("Enter the element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
                         dlist.InsertInEmptyList(data);
                         break;
                     case 3:
-                        Console.WriteLine("Enter elemint to be inserted: ");
+                        Console.WriteLine("Enter element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
                         dlist.InserInBeginning(data);
                         break;
                     case 4:
-                        Console.WriteLine("Enter an elemint to be inserted: ");
+                        Console.WriteLine("Enter an element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
                         dlist.InsertAtEnd(data);
                         break;
                     case 5:
-                        Console.WriteLine("Enter the elemeint to be inserted: ");
+                        Console.WriteLine("Enter the element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Enter elemeint after which to insert: ");
+                        Console.WriteLine("Enter element after which to insert: ");
                         x = Convert.ToInt32(Console.ReadLine());
                         dlist.InsertAfter(data, x);
                         break;
                     case 6:
-                        Console.WriteLine("Enter the elememint to be inserted: ");
+                        Console.WriteLine("Enter the element to be inserted: ");
                         data = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Enter the elemint before wich to insert: ");
+                        Console.WriteLine("Enter the element before wich to insert: ");
                         x = Convert.ToInt32(Console.ReadLine());
                         dlist.InsertBefor(data, x);
                         break;

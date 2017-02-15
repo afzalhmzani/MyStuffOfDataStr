@@ -46,7 +46,7 @@ namespace StackProject
                         Console.WriteLine("Wrong choice");
                         break;
                 }
-                Console.WriteLine("");
+                Console.WriteLine(" ");
             }
         }
     }
