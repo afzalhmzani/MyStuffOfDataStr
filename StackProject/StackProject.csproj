@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Node.cs" />
     <Compile Include="StackA.cs" />
     <Compile Include="StackDemeo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StackL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

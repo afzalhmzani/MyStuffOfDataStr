@@ -8,6 +8,7 @@ namespace StackProject
         {
             int choice, x;
             StackA stackA = new StackA(8);
+            StackL stackL = new StackL();
 
             while (true)
             {
@@ -27,20 +28,23 @@ namespace StackProject
                     case 1:
                         Console.Write("Enter the elemnt to be pushed: ");
                         x = Convert.ToInt32(Console.ReadLine());
-                        stackA.Push(x);
+                        //stackA.Push(x); // array in a stack
+                        stackL.Push(x);
                         break;
                     case 2:
-                        x = stackA.Pop();
+                        //x = stackA.Pop(); //array in stack 
+                        x = stackL.Pop();
                         Console.WriteLine("Popped element is: " + x);
                         break;
                     case 3:
-                        Console.WriteLine("The element at the top is " + stackA.Peek());
+                        Console.WriteLine("The element at the top is " + stackL.Peek());
                         break;
                     case 4:
-                        stackA.Display();
+                        //stackA.Display(); // array in stack to dispaly
+                        stackL.Display();
                         break;
                     case 5:
-                        Console.WriteLine("The size of the stack is: " + stackA.Size());
+                        Console.WriteLine("The size of the stack is: " + stackL.Size());
                         break;
                     default:
                         Console.WriteLine("Wrong choice");
