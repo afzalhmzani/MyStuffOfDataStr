@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularLinkedListProject",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackProject", "StackProject\StackProject.csproj", "{C337A5EC-BB9E-4B98-996E-F5BF6B502682}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueProject", "QueueProject\QueueProject.csproj", "{BAC4E516-D914-427F-9E88-43F0EF6F914C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C337A5EC-BB9E-4B98-996E-F5BF6B502682}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C337A5EC-BB9E-4B98-996E-F5BF6B502682}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C337A5EC-BB9E-4B98-996E-F5BF6B502682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC4E516-D914-427F-9E88-43F0EF6F914C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC4E516-D914-427F-9E88-43F0EF6F914C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC4E516-D914-427F-9E88-43F0EF6F914C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC4E516-D914-427F-9E88-43F0EF6F914C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
