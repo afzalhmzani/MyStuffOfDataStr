@@ -8,6 +8,8 @@ namespace QueueProject
         {
             int choice, x;
             QueueA queueA = new QueueA(10);
+            QueueL queueL = new QueueL();
+
 
             while (true)
             {
@@ -27,22 +29,24 @@ namespace QueueProject
                     case 1:
                         Console.Write("Enter the elemnt to be pushed: ");
                         x = Convert.ToInt32(Console.ReadLine());
-                        queueA.Insert(x);
+                        //queueA.Insert(x); //array insid queue
+                        queueL.Insert(x);
                         break;
                     case 2:
 
-                        x = queueA.Delete();
+                        //x = queueA.Delete(); //delete an array insid queue
+                        x = queueL.Delete();
                         Console.WriteLine("Deleted element is: " + x);
                         break;
                     case 3:
-                        Console.WriteLine("The element at the top is " + queueA.Peek());
+                        Console.WriteLine("The element at the top is " + queueL.Peek());
                         break;
                     case 4:
 
-                        queueA.Display();
+                        queueL.Display();
                         break;
                     case 5:
-                        Console.WriteLine("The size of the stack is: " + queueA.Size());
+                        Console.WriteLine("The size of the stack is: " + queueL.Size());
                         break;
                     default:
                         Console.WriteLine("Wrong choice");

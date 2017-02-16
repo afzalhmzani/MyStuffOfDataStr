@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QueNode.cs" />
     <Compile Include="QueueA.cs" />
     <Compile Include="QueueDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
